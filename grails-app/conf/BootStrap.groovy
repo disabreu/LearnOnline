@@ -28,15 +28,15 @@ class BootStrap {
 				
 				def salt = "2014grails" //for salting passwords
 				
-				def user1 = new User(id:1, username:"jmorenov", password:("password1" + salt).encodeAsSHA1().toString(), name:"Javier", lastName:"Moreno Valdecantos", role:"student", email:"jmorenov@hawk.iit.edu", courses:[course1, course2])
+				def user1 = new User(id:1, username:"jmorenov", password:("password1" + salt).encodeAsSHA1().toString(), name:"Diana", lastName:"Sanchez", role:"student", email:"dianasabreu@hawk.iit.edu", courses:[course1, course2])
 				user1.save(flush:true)
 				def user2 = new User(id:2, username:"jlamber4", password:("password2" + salt).encodeAsSHA1().toString(), name:"Jason", lastName:"Lambert", role:"professor", email:"jlamber4@hawk.iit.edu", courses:[course1])
 				user2.save(flush:true)
 				def user3 = new User(id:3, username:"smatches", password:("password3" + salt).encodeAsSHA1().toString(), name:"Safder", lastName:"Matcheswala", role:"student", email:"smatchesw@hawk.iit.edu", courses:[course2, course3])
 				user3.save(flush:true)
-				def user4 = new User(id:4, username:"pmontojo", password:("password4" + salt).encodeAsSHA1().toString(), name:"Paula", lastName:"Montojo Torrente", role:"student", email:"pmontojo@hawk.iit.edu", courses:[course1, course2, course5])
+				def user4 = new User(id:4, username:"pmontojo", password:("password4" + salt).encodeAsSHA1().toString(), name:"Beatriz", lastName:"Fuster Gonzalez", role:"student", email:"bfusterg@hawk.iit.edu", courses:[course1, course2, course5])
 				user4.save(flush:true)
-				def user5 = new User(id:5, username:"achatell", password:("password5" + salt).encodeAsSHA1().toString(), name:"Amber", lastName:"Chatellier", role:"professor", email:"achatell@hawk.iit.edu", courses:[course3, course4])
+				def user5 = new User(id:5, username:"achatell", password:("password5" + salt).encodeAsSHA1().toString(), name:"Jeremy", lastName:"Hajeck", role:"professor", email:"jhajek@hawk.iit.edu", courses:[course3, course4])
 				user5.save(flush:true)
 				
 			}
